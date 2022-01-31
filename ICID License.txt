@@ -1,0 +1,10 @@
+"In Case I'm Dead" License
+
+Definitions:
+Repository - current github folder containing this licence file, including all subfolders.
+Author - the owner of repository this file is contained in.
+Mods - the Satisfactory Mods Source Files contained in current repository.
+Admins - the administrators of ficsit.app, associated discord and SMM app.
+Prolonged absence - a period over 2 months during which the Author cannot be contacted via discord or any other means provided.
+
+As an Author of mods contained in this repository, in case of my Prolonged Absence, I grant the Admins the right to copy, update and redistribute the mod source files (Mods), and to hand over the ModReference to a new maintainer who will take over, provided the original author credits will be kept. 
