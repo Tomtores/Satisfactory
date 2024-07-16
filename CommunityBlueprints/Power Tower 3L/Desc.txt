@@ -1,0 +1,15 @@
+***
+
+### 3-Phase Power Grid Set.
+- Three phases (three separate circuits) per tower
+- Features versions with/without labels, ladders and switchboards.
+- Switchboards already wired to respective tower sections (check the labels)
+- Label colors according to EU standard (Brown/Black/Gray)
+- Amperage capacity: Unrated/Infinite
+- Uses default factory swatch
+- All towers can be swapped between ladder/no-ladder versions after building (simply sample the power tower and press e to switch to other version, then upgrade in place the bottom and top tower)
+- Features build point for hypertube on top. Please remember hypertubes have smaller distance limit than towers - plan your spacing accordingly.
+- Use with transformers for realistic HV/LV power grid.
+- Note: Requires 6x6x6 Blueprinter to load and edit
+
+Check other uploads for more tower variants and transformers.
