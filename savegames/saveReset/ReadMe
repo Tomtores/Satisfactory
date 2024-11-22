@@ -2,9 +2,9 @@ What does it do:
 Transplant script to copy over things from your old save to new one. When you want a fresh start.
 Copied:
 - Total playtime (save menu display + ingame counter)
-- vehicle paths [not implemented yet]
+- vehicle paths (You have to manually save them with names in your SOURCE save. Once your target save has the factory and trucks back in it, you have to manually load them per truck)
 - swatches [not implemented yet]
-- awesome sink point progress [not implemented yet] (basically, you keep current difficulty of progression. Otherwise new save starts with at 0 points and veeeery cheap tickets)
+- debug (Enable this option to get json representation of your TARGET file before and after edit in the /temp folder. This way you can compare what actually got changed. I recommend WinMerge, notepad++ dies when comparing at this size)
 
 Prerequisities:
 
@@ -13,7 +13,7 @@ Download Grehak save parser from https://github.com/GreyHak/sat_sav_parse
 Drop the TRANSPLANT.py into same folder
 Place your SOURCE (legacy savegame) and TARGET (new savegame where you just landed) in the same folder for simplicity
 
-Run `python TRANSPLANT.py SOURCE TARGET --playtime`
+Run `python TRANSPLANT.py SOURCE TARGET --playtime --vehicles`
 Result will be saved as `TARGET_Edited.sav`
 Temporary files are stored in temp folder. You can delete them after work is done.
-If you want to check if the properties are transferred correctly, run the script once without any parameters (just source and target) to execute resave with no changes and store a copy of TARGET.json, then run the script again with parameter enabled and compare newly generated TARGET.json to previous copy.
+If you want to check if the properties are transferred correctly, run the script with --debug parameter to create TARGET_Edited.json in the temp folder, so you can compare what got changed.
