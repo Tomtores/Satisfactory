@@ -1,4 +1,4 @@
-# generated with help of chat GPT and hand-fixed to actually work.
+# base layout generated with help of chat GPT, methods hand-implemented by a human
 
 import argparse
 import subprocess
@@ -6,6 +6,7 @@ import os
 import json
 
 import sav_parse
+
 
 # Helper functions to convert .sav to JSON and vice versa
 def sav_to_json(sav_file, json_file):
@@ -133,8 +134,95 @@ def transplant_vehicle_paths(sourceSavExt, edited_sav_ext, temp_dir):
     print(paths)
     export_paths_json(sourceSavExt, paths)
     import_paths_json(edited_sav_ext, paths)
-
 #end transplant vehicle paths
+
+def transplant_color_swatches(source_json, target_json):
+    
+    def transplant_color_slots(source_data, target_data):
+        color_slots = False
+        for src_object in source_data["levels"]["null"]["objects"]:
+            if "instanceName" in src_object and "properties" in src_object:
+                instance = src_object["instanceName"]
+                if str(instance).startswith("Persistent_Level:PersistentLevel.BuildableSubsystem"):
+                    for src_prop in src_object["properties"]:
+                        if str(src_prop[0]) == "mColorSlots_Data":
+                            source_colors = src_prop[1]
+        
+        for tgt_object in target_data["levels"]["null"]["objects"]:
+            if "instanceName" in tgt_object and "properties" in tgt_object:
+                instance = tgt_object["instanceName"]
+                if str(instance).startswith("Persistent_Level:PersistentLevel.BuildableSubsystem"):
+                    for tgt_prop in tgt_object["properties"]:
+                        if str(tgt_prop[0]) == "mColorSlots_Data":
+                            tgt_prop[1] = source_colors
+                            color_slots = True
+                    if not color_slots:
+                        tgt_object["properties"].append(["mColorSlots_Data", source_colors])
+                        tgt_object["propertyTypes"].append(["mColorSlots_Data", ["ArrayProperty", "StructProperty", "FactoryCustomizationColorSlot"], 0])
+    #end transplant_color_slots
+
+    def transplant_color_presets(source_data, target_data):
+        color_presets = False
+        for src_object in source_data["levels"]["null"]["objects"]:
+            if "instanceName" in src_object and "properties" in src_object:
+                instance = src_object["instanceName"]
+                if str(instance).startswith("Persistent_Level:PersistentLevel.BP_GameState"):
+                    for src_prop in src_object["properties"]:
+                        if str(src_prop[0]) == "mPlayerGlobalColorPresets":
+                            source_colorPresets = src_prop[1]
+
+        for tgt_object in target_data["levels"]["null"]["objects"]:
+            if "instanceName" in tgt_object and "properties" in tgt_object:
+                instance = tgt_object["instanceName"]
+                if str(instance).startswith("Persistent_Level:PersistentLevel.BP_GameState"):
+                    for tgt_prop in tgt_object["properties"]:
+                        if str(tgt_prop[0]) == "mPlayerGlobalColorPresets":
+                            tgt_prop[1] = source_colorPresets
+                            color_presets = True
+                    if not color_presets:
+                        tgt_object["properties"].append(["mPlayerGlobalColorPresets", source_colorPresets])
+                        tgt_object["propertyTypes"].append(["mPlayerGlobalColorPresets", ["ArrayProperty", "StructProperty", "GlobalColorPreset"], 0])
+    #end transplant_color_presets
+
+    def transplant_light_colors(source_data, target_data):
+        light_colors = False
+        for src_object in source_data["levels"]["null"]["objects"]:
+            if "instanceName" in src_object and "properties" in src_object:
+                instance = src_object["instanceName"]
+                if str(instance).startswith("Persistent_Level:PersistentLevel.BP_GameState"):
+                    for src_prop in src_object["properties"]:                    
+                        if str(src_prop[0]) == "mBuildableLightColorSlots":
+                            source_lightColors = src_prop[1]
+
+        for tgt_object in target_data["levels"]["null"]["objects"]:
+            if "instanceName" in tgt_object and "properties" in tgt_object:
+                instance = tgt_object["instanceName"]
+                if str(instance).startswith("Persistent_Level:PersistentLevel.BP_GameState"):
+                    for tgt_prop in tgt_object["properties"]:
+                        if str(tgt_prop[0]) == "mBuildableLightColorSlots":
+                            tgt_prop[1] = source_lightColors
+                            light_colors = True
+                    if not light_colors:
+                        tgt_object["properties"].append(["mBuildableLightColorSlots", source_lightColors])
+                        tgt_object["propertyTypes"].append(["mBuildableLightColorSlots", ["ArrayProperty", "StructProperty", "LinearColor"], 0])
+    #end transplant_light_colors
+
+
+    with open(source_json, 'r') as src_file:
+        source_data = json.load(src_file)
+    with open(target_json, 'r') as tgt_file:
+        target_data = json.load(tgt_file)
+
+    transplant_color_slots(source_data, target_data)
+    transplant_color_presets(source_data, target_data)
+    transplant_light_colors(source_data, target_data)
+
+    # Write the updated target JSON file
+    with open(target_json, 'w') as tgt_file:
+        json.dump(target_data, tgt_file, indent=4)
+
+    print(f"Swatches copied into target save")
+#end transplant_color_swatches
 
 # Main function
 def main():
@@ -143,7 +231,7 @@ def main():
     parser.add_argument("target", help="Target save file (.sav)")
     parser.add_argument("--playtime", action="store_true", help="Transplant playtime data")
     parser.add_argument("--vehicles", action="store_true", help="Transplant vehicle paths")
-    parser.add_argument("--swatches", action="store_true", help="Transplant color swatches")
+    parser.add_argument("--colors", action="store_true", help="Transplant color swatches")
     parser.add_argument("--debug", action="store_true", help="Produce a json-dump of the final save to compare with original")
 
     args = parser.parse_args()
@@ -176,6 +264,9 @@ def main():
     if args.vehicles:
         create_vehicle_subsystem(target_json)
 
+    if args.colors:
+        transplant_color_swatches(source_json, target_json)
+
     # Convert modified JSON back to new .sav file
     edited_sav_ext = f"{targetSav}_Edited.sav"
     json_to_sav(target_json, edited_sav_ext)
@@ -186,9 +277,11 @@ def main():
     print(f"Edited save file created: {edited_sav_ext}")
 
     if args.debug:
+        target_original_json = os.path.join(temp_dir, f"{targetSav}_Original.json")
+        sav_to_json(targetSavExt, target_original_json)
         target_edited_json = os.path.join(temp_dir, f"{targetSav}_Edited.json")
         sav_to_json(edited_sav_ext, target_edited_json)
-        sav_to_json(targetSavExt, target_json)
+        print(f"Created json dumps of original {target_original_json} and edited save {target_edited_json}")
 
 if __name__ == "__main__":
     main()
