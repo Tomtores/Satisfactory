@@ -46,6 +46,7 @@ BACKUP your saves (even if you did so - backup them again)
 
 ### [optional] Transplanting data via save editing
 We will be using Grehak Save parser - download it from `https://github.com/GreyHak/sat_sav_parse` and unpack to known folder (`SAVE_RESET/sav_parse_v1.6_full_release` on desktop)
+- Install Python, if you don't have it yet (its a script language)
 - Copy SOURCE and TARGET saves into the folder with the tool
 - Download and save the provided [`transplant.py`](https://github.com/Tomtores/Satisfactory/blob/main/savegames/saveReset/TRANSPLANT.py) into the folder with the tool (containing `sav_cli.py`)
 - Shift-rightclick and select powershell or your shell of choice, then run following command:
