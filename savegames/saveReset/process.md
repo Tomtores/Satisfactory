@@ -55,6 +55,7 @@ We will be using Grehak Save parser - download it from `https://github.com/GreyH
 The command will take some time to execute (especially if you have multiple truck paths) - be patient.
 - The result will ba saved into TARGET_Edited.sav
 - **Remember** to use the modified TARGET_Edited.sav save in next steps ;-)
+- Note: If the Target_Edited.sav does not load properly after pasting the megaprint, try opening the edited save in game and resaving it as new file. That fixed the issue for me.
 
 ### Copying your buildings with inventories via SCIM:
 
@@ -68,5 +69,6 @@ The command will take some time to execute (especially if you have multiple truc
 - A new button will appear below - click it to actually paste the factory back into the new save. It will take some time, based how big your original save was.
 - Use button to download the final save.
 - Put the save in your game saves folder and load the game.
+- You may want to resave as new file to ensure it works fine.
 - [optional] Load the save with AGS on or Flying mod installed. Spend some time inspect your factory. Take your time. Once you are done, quit the game without saving. You don't want your achievements disabled due to AGS, do you?
 - Once you are certain the save looks correct, restart the game, turn off passive mode, turn on autosave, load the final modified save and enjoy your first day of working for Ficsit (or whichever subsidiary you contracted for). You will have to manually load the truck paths and redo your hotbars, but hey, at least you kept your factory and swatches.
