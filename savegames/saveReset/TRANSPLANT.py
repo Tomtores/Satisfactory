@@ -1,3 +1,4 @@
+# V4 - final version (for now)
 # base layout generated with help of chat GPT, methods hand-implemented by a human
 
 import argparse
@@ -6,7 +7,6 @@ import os
 import json
 
 import sav_parse
-
 
 # Helper functions to convert .sav to JSON and vice versa
 def sav_to_json(sav_file, json_file):
@@ -98,8 +98,7 @@ def create_vehicle_subsystem(target_json):
 #end create vehicle subsystem
 
 def transplant_vehicle_paths(sourceSavExt, edited_sav_ext, temp_dir):
-    #todo list paths from original save. add all paths to target save. may need to create the subsystem in targetjson first?.
-    
+        
     def list_paths(sourceSavExt):   #list vehicle paths from source, copied from save cli cause it prints instead of returnz
         paths = []
         (saveFileInfo, headhex, grids, levels, extraObjectReferenceList) = sav_parse.readFullSaveFile(sourceSavExt)
@@ -121,7 +120,7 @@ def transplant_vehicle_paths(sourceSavExt, edited_sav_ext, temp_dir):
     def export_paths_json(sourceSavExt, paths): #extract paths to json files
         for index, path in enumerate(paths):
             filename = os.path.join(temp_dir, f"VP{index}.json")
-            subprocess.run(["py", "sav_cli.py", "--export-vehicle-path", path, sourceSavExt, filename], check=True)
+            subprocess.run(["py", "sav_cli.py", "--export-vehicle-path", path, sourceSavExt, filename], check=False)
     #end export paths json
 
     def import_paths_json(edited_sav_ext, paths): #import paths to json files
