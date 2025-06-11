@@ -1,0 +1,21 @@
+Lazy Designs (no liability) presents: Very large blueprint designers.  
+
+Available sizes:
+- 24x24x6
+- 24x24x24
+- 48x48x6
+- 48x48x48
+
+*Tip: Start a "creative" save with AGS (no-cost, flying), then transfer the completed blueprints to main save. Hoverpak will not work due to machine sheer size.*
+
+# **No warranty**  
+[The mod is provided as-is, with no promise of working correctly or at all. It should work, but given the ridiculous size, it may just as well crash the game or act in unpredictable ways. Recommended for creative worlds. Please make a copy of your savefile before using it]
+
+Known issues: Some mods like Infinite zoop or auto connections may cause objects to not be registered as built "inside" the blueprint designer and thus not saved into the blueprint. This is a base game issue that occurs with original game blueprint designer too and I have no way of fixing it.
+
+![megaprinter 24](https://github.com/Tomtores/Satisfactory/blob/main/Megaprinters/megaprinter24.png?raw=true)
+
+![megaprinter 48](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/Megaprinters/megaprinter48S.png)
+
+
+Tip: Due to size, you will want to lock it in place (h) and walk away, or build it above you.  

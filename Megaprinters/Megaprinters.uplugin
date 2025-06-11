@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.2.0",
+	"FriendlyName": "Megaprinters",
+	"Description": "Very large blueprinters, for railways I guess.",
+	"Category": "Modding",
+	"CreatedBy": "Tomtores",
+	"CreatedByURL": "https://github.com/Tomtores/Satisfactory",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "SML",
+			"Enabled": true,
+			"SemVersion": "^3.11.1"
+		}
+	],
+	"SemVersion": "1.2.0",
+	"GameVersion": ">=416835"
+}
