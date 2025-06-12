@@ -13,9 +13,9 @@ Available sizes:
 
 Known issues: Some mods like Infinite zoop or auto connections may cause objects to not be registered as built "inside" the blueprint designer and thus not saved into the blueprint. This is a base game issue that occurs with original game blueprint designer too and I have no way of fixing it.
 
-![megaprinter 24](https://github.com/Tomtores/Satisfactory/blob/main/Megaprinters/Media/megaprinter24.png?raw=true)
+![megaprinter 24](https://github.com/Tomtores/Satisfactory/blob/main/Megaprinters/SiteDocs/megaprinter24.png?raw=true)
 
-![megaprinter 48](https://github.com/Tomtores/Satisfactory/blob/main/Megaprinters/Media/megaprinter48S.png?raw=true)
+![megaprinter 48](https://github.com/Tomtores/Satisfactory/blob/main/Megaprinters/SiteDocs/megaprinter48S.png?raw=true)
 
 
 Tip: Due to size, you will want to lock it in place (h) and walk away, or build it above you.  
