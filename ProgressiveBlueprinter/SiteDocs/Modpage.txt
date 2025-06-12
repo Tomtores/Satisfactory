@@ -1,0 +1,105 @@
+## Progressive Blueprinters
+  
+Have you ever wanted to start with blueprints early, but was overwhelmed by the size?  
+Or needed a small print made on location and struggled to find a place to put large blueprint machine down?  
+Or perhaps wanted to go slightly larger without it feeling cheaty?  
+We got you covered.
+
+With **Fix-It Ltd.** Progressive Blueprinter Pack, you can ease into blueprint designing at your pace, and expand your toolkit (and size of designs) as you progress!  
+
+*Important note:*  
+*Blueprint designs can only be loaded back into same size blueprinter. But you can build them into larger one if needed.*
+
+
+**Known issue**: The blueprints cannot be loaded into 1x1 - 3x3 blueprinters. For some reason game thinks they are 4x4. Workaround: Select the blueprint and build it inside the blueprinter.
+
+
+### Tier 1 - 1x1x1 foundations
+
+*Requires: The Pioneer to show they can gather a full stack of every basic material*
+
+Miniprinting.  
+Recommended construction: Anti-wildlife bunker.
+
+![Blueprinter 1x1x1](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/1x1promoS2.png?raw=true)
+
+We are not supposed to give you this technology YET, but there is a reason Fix-It Tools users consistently place in the top five percentile. Go Wild!
+
+P.S. Did you know your build tool sampling mode can sample multiple objects at once? It just needs a frame of reference to tell what is grouped together. This is the Frame Of Reference.
+
+### Tier 2 - 2x2x2 foundations
+
+*Requires: Tier 1 blueprinter unlocked.*
+
+Small factor blueprinting - ideal for decorations.
+
+![Blueprinter 2x2x2](https://raw.githubusercontent.com/Tomtores/Satisfactory/main/ProgressiveBlueprinter/2x2promoS.png)
+
+### Tier 3 - 3x3x3 foundations
+
+*Requires: Tier 2 blueprinter unlocked.*
+
+You can start building actual machine blueprints now.
+
+![Blueprinter 3x3x3](https://raw.githubusercontent.com/Tomtores/Satisfactory/main/ProgressiveBlueprinter/3x3promoS.png)
+
+### Tier 4 - 4x4x4 foundations
+
+Already in your game
+
+### Tier 5 - 5x5x5 foundations
+
+*Requires: FicsIt Official Blueprint Designer Mk1 unlocked.*
+
+Full sized blueprints, how they were supposed to be. You can do the 5x5 challenge now!
+
+![Blueprinter 5x5x5](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/5x5promoS.png?raw=true)
+
+### Tallprinter (Tier 5)
+
+*Requires: Bundled in Tier 5 unlock*
+
+For tall folks.
+Why does it look like somebody stacked four regular blueprinters? Because that is what we did.
+It is very tall.
+
+No idea why you need it, but you asked and we deliver.
+Yes, you can fit the radar tower in.
+
+![Tallprinter](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/999promoS.png?raw=true)
+
+### Tier 6 - 6x6x6 foundations
+
+*Requires: Tier 5 blueprinter OR FicsIt Official Blueprint Designer Mk2 unlocked*
+
+Large blueprints. It is a chonky boi.
+
+![Blueprinter 6x6x6](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/6x6promoS.png?raw=true)
+
+### Tier 7 - 8x8x8 foundations
+
+*Requires: Tier 6 blueprinter OR FicsIt Official Blueprint Designer Mk3 unlocked.*
+
+Very large blueprinter.  
+For expert builders only.
+
+![Blueprinter 8x8x8](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/8x8promoS.png?raw=true)
+
+### Tier 8 - 10x10x10 foundations
+
+*Requires: Tier 7 blueprinter unlocked*
+
+Expert-size blueprinter.
+
+![Blueprinter 10x10x10](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/ProgressiveBlueprinter/10x10promoS.png)
+
+### Tier 9 - 12x12x12 foundations
+
+*Requires: Tier 8 blueprinter unlocked*
+
+Quantum technology. The pineapple of engineering!
+
+![Blueprinter 12x12x12](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/ProgressiveBlueprinter/12x12promoS.png)
+
+
+

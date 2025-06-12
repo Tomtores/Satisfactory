@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.4.0",
+	"SemVersion": "1.4.0",
+	"FriendlyName": "ProgressiveBlueprinter",
+	"Description": "Set of advanced blueprinting machines.",
+	"Category": "Modding",
+	"CreatedBy": "Tomtores",
+	"CreatedByURL": "https://github.com/Tomtores/Satisfactory",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "SML",
+			"SemVersion": "^3.11.1",
+			"Enabled": true
+		}
+	],
+	"GameVersion": ">=416835"
+}
