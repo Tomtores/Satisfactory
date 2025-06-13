@@ -21,7 +21,7 @@ With **Fix-It Ltd.** Progressive Blueprinter Pack, you can ease into blueprint d
 Miniprinting.  
 Recommended construction: Anti-wildlife bunker.
 
-![Blueprinter 1x1x1](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/1x1promoS2.png?raw=true)
+![Blueprinter 1x1x1](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/SiteDocs/1x1promoS2.png?raw=true)
 
 We are not supposed to give you this technology YET, but there is a reason Fix-It Tools users consistently place in the top five percentile. Go Wild!
 
@@ -33,7 +33,7 @@ P.S. Did you know your build tool sampling mode can sample multiple objects at o
 
 Small factor blueprinting - ideal for decorations.
 
-![Blueprinter 2x2x2](https://raw.githubusercontent.com/Tomtores/Satisfactory/main/ProgressiveBlueprinter/2x2promoS.png)
+![Blueprinter 2x2x2](https://raw.githubusercontent.com/Tomtores/Satisfactory/main/ProgressiveBlueprinter/SiteDocs/2x2promoS.png)
 
 ### Tier 3 - 3x3x3 foundations
 
@@ -41,7 +41,7 @@ Small factor blueprinting - ideal for decorations.
 
 You can start building actual machine blueprints now.
 
-![Blueprinter 3x3x3](https://raw.githubusercontent.com/Tomtores/Satisfactory/main/ProgressiveBlueprinter/3x3promoS.png)
+![Blueprinter 3x3x3](https://raw.githubusercontent.com/Tomtores/Satisfactory/main/ProgressiveBlueprinter/SiteDocs/3x3promoS.png)
 
 ### Tier 4 - 4x4x4 foundations
 
@@ -53,7 +53,7 @@ Already in your game
 
 Full sized blueprints, how they were supposed to be. You can do the 5x5 challenge now!
 
-![Blueprinter 5x5x5](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/5x5promoS.png?raw=true)
+![Blueprinter 5x5x5](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/SiteDocs/5x5promoS.png?raw=true)
 
 ### Tallprinter (Tier 5)
 
@@ -66,7 +66,7 @@ It is very tall.
 No idea why you need it, but you asked and we deliver.
 Yes, you can fit the radar tower in.
 
-![Tallprinter](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/999promoS.png?raw=true)
+![Tallprinter](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/SiteDocs/999promoS.png?raw=true)
 
 ### Tier 6 - 6x6x6 foundations
 
@@ -74,7 +74,7 @@ Yes, you can fit the radar tower in.
 
 Large blueprints. It is a chonky boi.
 
-![Blueprinter 6x6x6](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/6x6promoS.png?raw=true)
+![Blueprinter 6x6x6](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/SiteDocs/6x6promoS.png?raw=true)
 
 ### Tier 7 - 8x8x8 foundations
 
@@ -83,7 +83,7 @@ Large blueprints. It is a chonky boi.
 Very large blueprinter.  
 For expert builders only.
 
-![Blueprinter 8x8x8](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/8x8promoS.png?raw=true)
+![Blueprinter 8x8x8](https://github.com/Tomtores/Satisfactory/blob/main/ProgressiveBlueprinter/SiteDocs/8x8promoS.png?raw=true)
 
 ### Tier 8 - 10x10x10 foundations
 
@@ -91,7 +91,7 @@ For expert builders only.
 
 Expert-size blueprinter.
 
-![Blueprinter 10x10x10](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/ProgressiveBlueprinter/10x10promoS.png)
+![Blueprinter 10x10x10](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/ProgressiveBlueprinter/SiteDocs/10x10promoS.png)
 
 ### Tier 9 - 12x12x12 foundations
 
@@ -99,7 +99,7 @@ Expert-size blueprinter.
 
 Quantum technology. The pineapple of engineering!
 
-![Blueprinter 12x12x12](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/ProgressiveBlueprinter/12x12promoS.png)
+![Blueprinter 12x12x12](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/ProgressiveBlueprinter/SiteDocs/12x12promoS.png)
 
 
 
