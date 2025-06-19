@@ -1,0 +1,34 @@
+{
+	"SemVersion": "1.7.0",
+	"Plugins": [
+		{
+			"Name": "SML",
+			"SemVersion": "^3.11.1",
+			"bIsOptional": false,
+			"Enabled": true
+		}
+	],
+	"Modules": [
+		{
+			"Name": "GardenerTools",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.7.0",
+	"FriendlyName": "Gardener Toolkit",
+	"Description": "Set of tools allowing selective foliage removal",
+	"Category": "Modding",
+	"CreatedBy": "Tomtores",
+	"CreatedByURL": "https://github.com/Tomtores/Satisfactory/tree/main/GardenerTools",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"GameVersion": ">=416835"
+}

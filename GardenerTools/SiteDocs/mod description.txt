@@ -1,0 +1,162 @@
+Fix-It ltd. recognizes Your dedication to preserving natural habitats, and has authorized access to advanced gardening tools to aid you.  
+
+<hr />
+
+# Equipment
+
+### Precision saw (Unlocked at tier 5)
+
+With this computer-guided foliage removal system you can cut selected pieces of foliage, instead of deforesting whole area in one swing. It uses petrol, to avoid cutting trees for biomass, and also cuts faster than regular chainsaw.  
+**[FixIt.Saw.1.0.4]**  
+Also features alternate fire mode, that cuts just like regular chainsaw, so you don't have to carry a separate tool. It's two tools in one, for the price of three!  
+**[[FixIt.Saw.1.6.0]**  
+Now that single cut mode has been finally implemented in the basic chainsaw, the alternate fire functionality has been disabled. FixIt Chainsaw still provides best speed and uses superior fuel compared to base version.
+
+*[Cuts single highlighted piece of foliage. Starts in Single Target mode by default. Uses packaged fuel]*
+
+![Precision Saw](https://github.com/Tomtores/Satisfactory/blob/main/GardenerTools/precision%20saw%20promo.png?raw=true)
+
+<hr />
+
+# Chat commands 
+
+Note that "foliage" includes bushes, trees, but also weird coral, mushroom trees and rocks - everything that chainsaw or explosives can destroy.
+
+
+### Restore foliage 
+Type `"/sorryHannah"` into the player chat, to restore the foliage in small radius around the player (10 meters, slightly bigger than chainsaw AOE).  
+You can also use `"/regrow"` as a shorthand.  
+The plants are displayed as holographic "ghosts" and will turn into regular foliage items after game save & reload.  
+You can interact with ghosts to remove them again.
+
+![Restore foliage demo](https://github.com/Tomtores/Satisfactory/blob/main/GardenerTools/RegrowDemo.png?raw=true)
+
+There is also a custom-radius version of the command, simply type:  
+`"/IReallyReallyWantMyTreesBackPrettyPlease x"` where x is the radius in meters.  
+The number of foliage restored in single use is limited to 1000 items for performance reasons.
+
+
+### Check foliage destruction count  
+Type `"/praiseHannah"` into player chat, to see total count of destroyed foliage, and The Goddess mood toward you.  
+Or you could use `"/foliageStats"` to just see the stats without drawing attention.
+
+![PraiseHannah](https://github.com/Tomtores/Satisfactory/blob/main/GardenerTools/praiseHannah.png?raw=true)
+
+
+### Preview destroyed foliage
+
+Pray to the Goddess Hannah to grant you a vision of perfect world, by using the command `"/HannahVision"`.  
+Use `/foliageDeletions` OR `/foliageShow` to use your built-in VR visualizer instead.  
+The destroyed foliage will appear as red ghosts that persist for 10 seconds. The vision shows removed foliage in 100 meter radius, and a maximum of 1000 objects.
+
+![Hannah Vision demo](https://github.com/Tomtores/Satisfactory/blob/main/GardenerTools/HannahVision.png?raw=true)
+
+
+### Restore all foliage on map (save reset)
+
+If you beg for forgiveness with `"/forgiveMeHannah"`, The Goddess will restore all foliage on the map to its pristine condition. This will also calm down The Goddess rage.  
+Since such divine interventions are complicated, you will need to save and reload the game, before the foliage starts showing up.  
+Non-believers can use `"/resetFoliage"` for the same effect.
+
+
+<hr />
+
+# Recommended add-ons:
+- [Plant safe vehicles](https://ficsit.app/mod/2WGc3MYTfZWTQZ) to avoid destroying plants when driving around.
+
+# Known issues
+- The foliage restored has wrong size -> Due to how game stores the deleted objects, I only have access to location, but not the actual size of the original objects. They will go back to proper size after game load.
+- Sometimes trees don't come back when using `"/sorryHannah"` OR `"/regrow"` -> Some large trees have point of origin far away from ground and don't fit into the radius of the command. I have doubled the range of command to 10m, but if it still doesn't work, try the custom radius version with value of 20 or 50. If there is something to be restored, it will pop up.
+
+# Changelog
+
+- 1.0.2 
+	- Some spelling fixes.
+	- Added "P" letter to Precision Saw icon to make it easier to distinguish in inventory. 
+	- Increased Zap Charge stack size and reduced craft time.
+	- Changed Plant Zapper recipe to use Shock Spear instead of Scanner, because we don't like making screws.
+	- Increased hammer factor for Precision Saw and Plant Zapper to prevent crafting multiple if you have heavy hand.
+	- Added Conveyor mesh for the Plant Zapper and Zap Charge.
+	- Added some painted-over Fix-It logos.
+	- Disabled some experimental features.
+
+- 1.0.3
+    - Added a cheaper, slower version of single target chainsaw unlockable with tier 2 materials and using biofuel.
+    - Precision Saw and Plant Zapper moved to tier 5, to stay in line with Packaged Fuel and Gas mask.
+    - Hopefully this is the last update.
+
+- 1.0.4
+    - PrecisionSaw firmware has been updated to allow cutting in wider area, just like regular chainsaw. You no longer have to carry two items with you.
+
+- 1.1.0
+    - Added chat command to restore foliage, if you happen to cut/blast too much.
+
+- 1.2.0
+  - Compatibility update - ~nothing works, but it doesn't crash your game~ (chainsaws work!). Fixing in progress.
+
+- 1.2.1
+  - Chat command is fixed - you can now restore foliage again!  
+  Current status:
+    - Chainsaws - **Working**. Colors may look odd due to how equipment is colored in U6.
+    - Plant Zapper - **Broken**. Will blow things up like regular nobelisk.
+    - Chat command to regrow foliage - **Working**. Please report weird behaviors.
+
+- 1.2.2
+  - Stability update. Custom range regrowth command is now limited to 1000 objects at once. May still crash your game if you go overboard. Note that if you deforested whole map and use it with very long range, you may not see plants popping back up near you, but they got restored... somewhere... outside your viewing range.
+
+- 1.2.3  
+  - Plant Zapper (precision nobelisk) is now removed, because it could not be fixed.
+  Please accept apologies from Fit-It ltd. and use following workarounds:
+    - Blow up the gas plants with regular nobelisks then apologize to Goddess Hannah a couple times to get the plants back.
+    - Use fireworks and attach them to gas plant. They only destroy one thing they attached to when launched.
+
+- 1.3.0
+  - Updated for U7 compatibility.
+
+- 1.4.0
+  - Updated for U8 compatibility. 
+  - Regrow command broken. Chainsaw textures missing Fix-It logo.
+
+- 1.4.1
+  - Fixed chainsaw textures
+
+- 1.4.1
+  - Updated for U8.2 compatibility.
+
+- 1.5.0  
+  - The commands of power are back!
+  - Fixed '/sorryHannah' (restores foliage in small radius around player)
+  - Boosted the radius of `/sorryHannah'
+  - Added '/praiseHannah' - new command to see how much foliage you destroyed and The Goddess mood toward you.
+
+- 1.5.1
+  - Code cleanup, nothing should break. If it did, let me know.
+  - Moved the milestone unlocks to the right of vanilla game milestones. This mod is awesome and important, but base game takes priority to not confuse players.
+  - Fixed a typo.
+
+- 1.5.2
+  - Added new command `/HannahVision` that grants the user vision of deleted foliage in the area.
+  - Simplified and cleaned up the code for foliage restore.
+
+- 1.6.0
+  - Compatibility release for Update 10 (Satis 1.0)
+  - Slow Saw (Tier 2) has been removed, following the addition of single target mode to basic saw.
+  - Precision Saw (Tier 5) has been changed to use the same system. It will default to Single Target mode when equipped. It still uses packaged fuel and cuts faster than basic chainsaw. 
+
+- 1.6.1
+  - New command: `/forgiveMeHannah` (OR `/resetFoliage`) - allows to restore all foliage on the map at once, but does not render the items until game reload for performance reasons. Use for resetting your save (foliage only)
+  - New command alias: `/foliageStats` to show number of removed foliage items. Works like `/praiseHannah`, but without the flair. Old command will remain for the true believers of The Goddess.
+  - New command alias: `/regrow` or `/regrowFoliage` - used to regrow foliage in small area around player, functions the same as `/sorryHannah` command. Old command will remain for the true believers of The Goddess. Restoring foliage in custom radius still requires the very long command - you know what you did and shall be punished.
+  - New command alias: `/foliageDeletions` OR `/foliageShow` - shows a ghostly vision of deleted foliage objects. Works like `/HannahVision`, just without the flair. Old command will remain for the true believers of The Goddess.
+
+
+
+## Feedback
+
+Like the mod?  
+Suggestions? Issues?  
+Throw a line to attention-starved developer!
+
+You can find me at modding discord as _Tomtores#8952_
+
+Icon by [Deantendo](https://ficsit.app/guide/5wQHZbwjYA2nJe)
