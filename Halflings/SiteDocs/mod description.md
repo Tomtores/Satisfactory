@@ -4,7 +4,7 @@ Do you build railways in half-pipe tunnels, but cannot place signals easily, bec
 With this mod you can easily build half sized Block and Path Signals, for your tunnel needs.
 Also allows creation of half-sized ceiling lights**.
 
-![Command](https://raw.githubusercontent.com/Tomtores/Satisfactory/blob/main/Halflings/SiteDocs/signalsenabled.png)
+![Command](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/Halflings/SiteDocs/signalsenabled.png)
 
 Use the chat command: `/halflings on`  
 This will enter the "Halfling Mode" and all Block and Path signals will be built in half size.  
@@ -16,12 +16,12 @@ Please note that sampling rail and switching to signal, will build the signal at
 
 ## Train signals
 
-![Tunnel](https://raw.githubusercontent.com/Tomtores/Satisfactory/3cf93da0e84c3f390719a468ab5e3cd53ff43566/SignalsPromo.png)
+![Tunnel](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/Halflings/SiteDocs/SignalsPromo.png)
 
 ## Lights
 
-![CeilingLight](https://raw.githubusercontent.com/Tomtores/Satisfactory/blob/main/Halflings/SiteDocs/ceiling_light.png)
-![LightPole](https://raw.githubusercontent.com/Tomtores/Satisfactory/blob/main/Halflings/SiteDocs/light_pole.png)
+![CeilingLight](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/Halflings/SiteDocs/ceiling_light.png)
+![LightPole](https://raw.githubusercontent.com/Tomtores/Satisfactory/refs/heads/main/Halflings/SiteDocs/light_pole.png)
 
 ### Known Issues:
 - The hologram is displayed wrong -> I have not found a way to put it in "correct" place. The signal will be built correctly though.
