@@ -1,0 +1,27 @@
+{
+	"SemVersion": "1.4.1",
+	"Plugins": [
+		{
+			"Name": "SML",
+			"SemVersion": "^3.11.1",
+			"bIsOptional": false,
+			"Enabled": true
+		}
+	],
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.4.1",
+	"FriendlyName": "Tunnel Signals",
+	"Description": "Build railway signals scaled to fit in tunnels.",
+	"Category": "Modding",
+	"CreatedBy": "Tomtores",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"GameVersion": ">=416835"
+}
