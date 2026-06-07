@@ -8,7 +8,7 @@ Available sizes:
 
 *Tip: Start a "creative" save with AGS (no-cost, flying), then transfer the completed blueprints to main save. Hoverpak will not work due to machine sheer size.*
 
-# **No warranty**  
+# **NO WARRANTY**  
 [The mod is provided as-is, with no promise of working correctly or at all. It should work, but given the ridiculous size, it may just as well crash the game or act in unpredictable ways. Recommended for creative worlds. Please make a copy of your savefile before using it]
 
 Known issues: Some mods like Infinite zoop or auto connections may cause objects to not be registered as built "inside" the blueprint designer and thus not saved into the blueprint. This is a base game issue that occurs with original game blueprint designer too and I have no way of fixing it.
