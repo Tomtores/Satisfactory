@@ -40,7 +40,7 @@ int URegrowCommand::ResetFoliage(AFGFoliageRemovalSubsystem* FoliageSystem, bool
 
 	for (TPair<FIntVector, FFoliageRemovalSaveDataPerCell>& level : FoliageSystem->mSaveData)	//iterate map squares
 	{
-		for (TPair<const UFoliageType*, FFoliageRemovalSaveDataForFoliageType>& foliageTypes : level.Value.SaveDataMap)	// iterate foliage types
+		for (TPair<TObjectPtr<const UFoliageType>, FFoliageRemovalSaveDataForFoliageType>& foliageTypes : level.Value.SaveDataMap)	// iterate foliage types
 		{
 			foliageTypes.Value.RemovedLocations.Empty();
 			foliageTypes.Value.RemovedLocationLookup.Empty();
@@ -93,7 +93,7 @@ int URegrowCommand::Regrow_Internal(AFGFoliageRemovalSubsystem* FoliageSystem, F
 }
 
 AFoliageGhost* RespawnActor(const UHierarchicalInstancedStaticMeshComponent* mesh, FVector location, UWorld* World, UClass* ActorPrototype, FString& log, bool debug,
-	FIntVector levelChunkId, const UFoliageType* foliageTypeKey, uint32 hash, AFGFoliageRemovalSubsystem* FoliageSystem)
+	FIntVector levelChunkId, TObjectPtr<const UFoliageType> foliageTypeKey, uint32 hash, AFGFoliageRemovalSubsystem* FoliageSystem)
 {
 	FActorSpawnParameters parameters = FActorSpawnParameters();
 	parameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
@@ -171,14 +171,14 @@ int URegrowCommand::UndeleteFoliage_Update8(AFGFoliageRemovalSubsystem* FoliageS
 
 	for (TPair<FIntVector, FFoliageRemovalSaveDataPerCell>& level : FoliageSystem->mSaveData)	//iterate map squares
 	{
-		for (TPair<const UFoliageType*, FFoliageRemovalSaveDataForFoliageType>& foliageTypes : level.Value.SaveDataMap)	// iterate foliage types
+		for (TPair<TObjectPtr<const UFoliageType>, FFoliageRemovalSaveDataForFoliageType>& foliageTypes : level.Value.SaveDataMap)	// iterate foliage types
 		{
 			for (int32 i = foliageTypes.Value.RemovedLocations.Num() - 1; i >= 0; i--)	//iterate specific removals, backwards, to avoid iterating over removed elements
 			{
 				if (IsInRange(foliageTypes.Value.RemovedLocations[i], playerLocation, range, log, debug))
 				{
-					UFoliageType* keyCopy = const_cast<UFoliageType*>(foliageTypes.Key);	//tbh, I have no idea what I'm doing here
-					UHierarchicalInstancedStaticMeshComponent* const* mesh = FoliageSystem->mFoliageComponentTypeMapping.FindKey(keyCopy);
+					TObjectPtr<UFoliageType> keyCopy = const_cast<UFoliageType*>(foliageTypes.Key.Get());	//tbh, I have no idea what I'm doing here
+					TObjectPtr<UHierarchicalInstancedStaticMeshComponent> const* mesh = FoliageSystem->mFoliageComponentTypeMapping.FindKey(keyCopy);
 					if (mesh)
 					{
 						if (respawnFoliage)	// foliage regrowth flow

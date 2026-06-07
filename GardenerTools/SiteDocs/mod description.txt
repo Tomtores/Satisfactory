@@ -153,6 +153,9 @@ Non-believers can use `"/resetAllFoliage"` for the same effect.
   - Recompiled for Update 11 compatibility
   - Changed `/resetFoliage` to `/resetAllFoliage` to avoid accidents.
 
+- 1.8.0
+  - Recompiled for Update 12 compatibility.
+  - Interacting with Foliage Ghosts seems to be broken as of now.
 
 ## Feedback
 
